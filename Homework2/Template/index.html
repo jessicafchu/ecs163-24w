@@ -1,0 +1,86 @@
+<!-- ============================================================
+       ECS HW2  Jessica Chu
+============================================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ============================================================
+       HTML Headings 
+============================================================= -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <title>Cosmetics</title>
+
+<!-- ============================================================
+       Style Section
+============================================================= -->
+  <style>
+    body { margin-left: 40px;}
+    .line { 
+      fill: none; 
+      stroke-width: 2px;
+    }
+    .legend { font-size: 12px; }
+    .chart-container { 
+      display: flex; 
+      justify-content: space-between;
+    }
+    .chart { width: 48%; }
+    .chart-caption {
+      text-align: left;
+      margin-left: 40px;
+    }
+    .pie-chart-container { margin-left: 40px, margin-top: 180px; }
+
+    .arc text {
+      font-size: 12px;
+      text-anchor: middle;
+    }
+  </style>
+</head>
+
+<!-- ============================================================
+       HTML Body
+============================================================= -->
+<body>
+  <h1>Cosmetics Data</h1>
+    <h2>Overview</h2>
+      <p>
+        These three graphs are the data visualizations that I thought would convey the Cosmetics data set the best. For the overview of the data, I wanted to compare the average rank with the price each product for all 6 of the different labels (moisturizer, cleanser, treatment, face mask, eye cream, and sun protection), hence why I chose to do parallel set plot (an advanced visualization). I also wanted an overview of just the products that are used in this data set so I used a pie chart to compare the different labels that are present in this data set. Finally, for my context view, I created a bar graph to showcase my findings from comparing the average rank of products to the different prices. I will explain in more detail about my observations from all three of these graphs in the observation section.</p>
+
+<!-- ============================================================
+       Overview Multiline Chart Container
+============================================================= -->
+  <div class="chart">
+    <div id="overview-chart-container" 
+      style="width: 1000px; height: 400px;">
+    </div>
+  </div>
+
+
+<!-- ============================================================
+       Pie Chart and Bar Chart Container
+============================================================= -->
+  <div class="chart-container">
+    <div class="chart">
+      <div id="pie-chart-container" 
+        style="width: 400px; height: 400px;">
+      </div>
+    </div>
+    <div class="chart">
+      <div id="bar-chart-container" 
+        style="width: 400px; height: 400px;">
+      </div>
+    </div>
+  </div>
+
+  <h2>Observations</h2>
+  <p>First looking at the parallel plot, I am able to compare all the different products by label and see how prices affect the rank of the product. Overall, I can see that generally for any type of product in the $10-$155 price range has a rank of above a 3.0. As soon as a product is over $155, we can see fluctuations between the quality and the type of product labels. After observing this overview data visualization, I wanted to focus more on products that had higher than a 4.0 rank and so I focused the view on the price range of $60-$100 in the form of a bar chart. What my focus view on the bar chart showed me in detail was how even split all the 6 product labels were in terms of the ranking, so I can come to a conclusion that the best cosmetic products to get would be in this range. Finally, my other data visualization (pie chart) just showed me the overview of the productsf by the labels. I could see how many cosmetics were being tested in this data set with moisturizers having the most products and sun protects having the lest amount of products to review.</p>
+
+<script src="main.js"></script>
+</body>
+
+</html>
